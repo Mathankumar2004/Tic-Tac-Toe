@@ -1,0 +1,213 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+.mainContainer{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(to right,#1fa2ff,#12d8fa,#a6ffcb);
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: minmax(80px,1fr) 8fr minmax(10px,.5fr);
+    font-size: 1em;
+}
+.mainNav{
+    display: grid;
+    grid-area: auto / 1 / auto / 1 ;
+    font-size: 1em;
+    align-items: center;
+}
+.mainNav h1{
+    text-align: center;
+    font-size: clamp(5px , 1em + 6vw  , 70px);
+}
+.mainBox{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    
+}
+.mainPlayer1{  
+    display: flex;
+    justify-content: center;
+    grid-area: 1 / 1 / 4 / 1;
+}
+.mainPlayer2{
+    display: flex;
+    justify-content: center;
+    grid-area: 1 / 3 / 4 / 3;
+}
+
+.playerName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: calc(1em + 1vh);
+    min-width: 25px;
+    min-height: 25px;
+    width: calc(25px + 4vw);
+    height:calc(25px + 1vw);
+    background-color: azure;
+    border-radius: 10%;
+    border:2px solid black;
+    background:linear-gradient(to bottom,rgb(131, 255, 48),rgb(252, 218, 106))
+
+}
+.playerName h1{
+    font-size: clamp(5px ,1vw + 5px , 30px);
+   
+}
+.profile{
+    margin-top: calc(1em + 10vh);
+    min-width: 50px;
+    min-height: 50px;
+    width: calc(25px + 6vw);
+    height:calc(25px + 6vw);
+    border-radius: 50%;
+    background-color: white;
+    border:2px solid black;
+    transition: background-color .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.profile h3{
+    
+  
+    font-size: clamp(25px,calc(15px + 6vw),90px);
+
+}
+.mainGame{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.mainGameBox{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.box{
+    display: flex;
+    border: 1px solid black;
+    min-width: 60px;
+    min-height: 60px;
+    width: calc(30px + 5vw);
+    height:calc(30px + 5vw);
+    align-items: center;
+    justify-content: center;
+}
+.box h1{
+    font-size: clamp(10px,calc(20px + 3vw),800px) ;
+
+}
+
+.mainRestart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: 3 / 2 / 3 / 2;
+}
+.mainRestart button{
+    min-width: 60px;
+    width:calc(30px + 5vw) ;
+    min-height: 30px;
+    height:calc(15px + 2.5vw);
+    font-size: clamp(5px ,1vw + 5px , 30px);
+    /* animation-name: newAni; */
+    background: linear-gradient(to bottom,rgb(137, 58, 58),white);
+    animation-duration: .8s;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-out;
+    
+}
+/* .btn:hover{
+    animation-name: none;    
+} */
+.mainWinning{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    grid-area: 1 / 2 / 1 / 2;
+}
+.mainWinning h1{
+    font-size:clamp(5px , 2em + 2vw  , 70px) ;
+    color: rgb(119, 252, 104);
+}
+
+@keyframes newAni{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(6deg);
+    }
+    50%{
+        transform: rotate(-12deg);
+    }
+    75%{
+        transform: rotate(12deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.box:hover{
+    background-color: rgb(213, 196, 196);
+}
+#box1{
+    border: 2.5px solid black;
+    border-top: none;
+    border-left: none;
+}
+#box2{
+    border: 2.5px solid black;
+    border-top: none;
+    
+}
+#box3{
+    border: 2.5px solid black;
+    border-top: none;
+    border-right: none;
+}
+#box4{
+    border: 2.5px solid black;
+    border-left: none; 
+}
+#box5{
+    border: 2.5px solid black;
+}
+#box6{
+    border: 2.5px solid black;
+    border-right: none;
+}
+#box7{
+    border: 2.5px solid black;
+    border-bottom: none;
+    border-left: none;
+}
+#box8{
+    border: 2.5px solid black;
+    border-bottom: none;
+}
+#box9{
+    border: 2.5px solid black;
+    border-right: none;
+    border-bottom: none;
+}
